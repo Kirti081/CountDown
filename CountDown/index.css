@@ -1,0 +1,32 @@
+*{
+    background-color: rgba(255, 232, 157, 0.973);
+}
+input{
+    border-radius: 10px;
+}
+.input{
+    display: flex;
+    width: 360px;
+    margin: auto;
+    
+}
+.inside-input{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin: auto;
+    margin-top: 20px;
+    width: 60px;
+}
+.number{
+    text-align: center;
+}
+label{
+    text-align: center;
+}
+h1,p{
+    text-align: center;
+}
+#Final-Date{
+    text-align: center;
+}

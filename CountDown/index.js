@@ -21,17 +21,17 @@ function clock(date1){
     const total = end-datee;
     if(total<0) return;
 
-    const seconds = Math.floor( (total/1000) % 60 );
-    input[4].value = seconds
-
-    const minutes = Math.floor( (total/1000/60) % 60 );
-    input[3].value = minutes;
+    const days = Math.floor( total/(1000*60*60*24) );
+    input[1].value = days;
 
     const hours = Math.floor( (total/(1000*60*60)) % 24 );
     input[2].value = hours;
+
+     const minutes = Math.floor( (total/1000/60) % 60 );
+    input[3].value = minutes;
     
-    const days = Math.floor( total/(1000*60*60*24) );
-    input[1].value = days;
+    const seconds = Math.floor( (total/1000) % 60 );
+    input[4].value = seconds;    
    
 }
 
